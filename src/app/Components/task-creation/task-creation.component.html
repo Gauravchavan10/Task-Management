@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="wrapper">
+            <h2>Task Creation</h2>
+            <form #formregister="ngForm" (submit)="AddTask()"> 
+               <br>
+               <!-- <h2>{{formregister.value|json}}</h2> -->
+                <div class="form-group">
+                <label>Id</label>
+                <input type="text" class="form-control" name="TaskId" [(ngModel)]="addtask.taskId"
+                required #taskid="ngModel" [class.is-invalid]="taskid.invalid && taskid.touched"/>
+
+                <small class="text-danger" [class.d-none]="taskid.valid || taskid.untouched">Task id is required</small>
+            </div>
+
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" name="title" [(ngModel)]="addtask.title"
+                required #title="ngModel" [class.is-invalid]="title.invalid && title.touched"/>
+
+                <small class="text-danger" [class.d-none]="title.valid || title.untouched">Task title is required</small>
+            </div>
+
+        
+
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" class="form-control" name="Description" [(ngModel)]="addtask.description"
+                required #description="ngModel" [class.is-invalid]="description.invalid && description.touched"/>
+
+                <small class="text-danger" [class.d-none]="description.valid || description.untouched">Description is required</small>
+            </div>
+            
+
+                
+            
+
+           
+            <div class="form-group">
+                <label>Due Date</label>
+                <input type="text" class="form-control" name="duedate" [(ngModel)]="addtask.dueDate"
+                required #duedate="ngModel" [class.is-invalid]="duedate.invalid && duedate.touched"/>
+
+                <small class="text-danger" [class.d-none]="duedate.valid || duedate.untouched">Due date is required</small>
+            </div>
+
+            <div class="form-group">
+                <label>Priority</label>
+                <input type="text" class="form-control" name="priority" [(ngModel)]="addtask.priority"
+                required #priority="ngModel" [class.is-invalid]="priority.invalid && priority.touched"/>
+
+                <small class="text-danger" [class.d-none]="priority.valid || priority.untouched">priority is required</small>
+            </div>
+
+            <div class="form-group">
+                <label>Status</label>
+                <input type="text" class="form-control" name="status" [(ngModel)]="addtask.status"
+                required #status="ngModel" [class.is-invalid]="status.invalid && status.touched"/>
+
+                <small class="text-danger" [class.d-none]="status.valid || status.untouched">Status is required</small>
+            </div>
+
+
+                <br>
+
+                <input type="submit" value="Add" class="btn btn-primary btn-block">
+
+            </form>
+            
+         
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+    </div>
+</div>

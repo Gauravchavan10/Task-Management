@@ -1,0 +1,8 @@
+.wrapper
+{
+    padding: 30px 40px;
+    margin-top: 60px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 5px gray;
+}

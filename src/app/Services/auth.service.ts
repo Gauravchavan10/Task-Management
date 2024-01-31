@@ -27,7 +27,7 @@ if(localStorage.getItem('token'))
 
   
   else{
-    this.router.navigateByUrl('/login')
+   
     return false;
   }
 }

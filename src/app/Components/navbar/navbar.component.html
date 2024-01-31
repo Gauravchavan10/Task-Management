@@ -3,8 +3,8 @@
       <a class="navbar-brand" href="#">Task Manager Application</a>
       
       <div class="form-inline my-2 my-lg-0">
-        <button (click)="loginhandler()"  *ngIf="!auth.getToken()"  class="btn btn-primary">Login</button>
-        <button (click)="logouthandler()" *ngIf="auth.getToken()" class="btn btn-danger">Logout</button>
+        <button (click)="loginhandler()"  *ngIf="!auth.getToken()"   class="btn btn-primary">Login</button>
+        <button (click)="logouthandler()"  *ngIf="auth.getToken()"  class="btn btn-danger">Logout</button>
       </div>
     </div>
   </nav>
